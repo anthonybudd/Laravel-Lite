@@ -2,15 +2,15 @@
 
 namespace Tests\Unit;
 
-use App\Models\ExmapleModel;
+use App\Models\ExampleModel;
 use Tests\TestCase;
 
-class ExmapleModelTest extends TestCase
+class ExampleModelTest extends TestCase
 {
     public function test_name_is_fillable(): void
     {
-        $exmapleModel = new ExmapleModel(['name' => 'AA1738']);
+        $exampleModel = new ExampleModel(['name' => 'AA1738']);
 
-        $this->assertSame('AA1738', $exmapleModel->name);
+        $this->assertSame('AA1738', $exampleModel->name);
     }
 }

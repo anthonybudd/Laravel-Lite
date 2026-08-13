@@ -4,19 +4,19 @@ use Illuminate\Support\Facades\Validator;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Response;
 use Illuminate\Http\Request;
-use App\Models\ExmapleModel;
+use App\Models\ExampleModel;
 
-// Exmaple GET Request
+// Example GET Request
 $router->get('/', function () {
     $models = [
-        new ExmapleModel(['name' => 'AA1738']),
-        new ExmapleModel(['name' => 'BA1017']),
-        new ExmapleModel(['name' => 'UA420'])
+        new ExampleModel(['name' => 'AA1738']),
+        new ExampleModel(['name' => 'BA1017']),
+        new ExampleModel(['name' => 'UA420'])
     ];
     return new JsonResponse($models);
 });
 
-// Exmaple POST Request
+// Example POST Request
 $router->post('/', function () {
     $request = Request::capture();
 
@@ -25,7 +25,6 @@ $router->post('/', function () {
     ]);
     if ($validator->fails()) return new JsonResponse(['errors' => $validator->errors()], 422);
 
-    $name = $request->get('name');
-    $exmapleModel = new ExmapleModel(['name' => $name]);
-    return new JsonResponse($exmapleModel);
+    $exampleModel = new ExampleModel(['name' => $request->get('name')]);
+    return new JsonResponse($exampleModel);
 });
