@@ -1,0 +1,10 @@
+services:
+  api:
+    build: .
+    container_name: api
+    volumes:
+      - ./:/var/www/html
+    ports:
+      - "80:80"
+    environment:
+      SERVER_NAME: ${SERVER_NAME}
