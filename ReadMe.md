@@ -16,10 +16,11 @@ $router->get('/', function () {
     return new Response("Hello World", 200); 
 });
 ```
+<small>App.php</small>
 
 ## Getting Started
 
-```
+```sh
 git clone git@github.com:anthonybudd/laravel-lite.git
 cd laravel-lite
 
@@ -45,7 +46,8 @@ All of your code goes into `/src` you can add subfolders if needed, otherwise ev
 ├── 📁 tests
 │   └── 📄 TestCase.php
 │
-├── 📖 ReadMe.md
-├── 📖 bootstrap.php
+├── 📄 ReadMe.md
+├── 🐘 bootstrap.php
+├── 🚢 Dockerfile
 ```
 
