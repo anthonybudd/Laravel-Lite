@@ -16,7 +16,7 @@ $router->get('/', function () {
     return new Response("Hello World", 200); 
 });
 ```
-<small>App.php</small>
+<sub>src/App.php</sub>
 
 ## Getting Started
 
