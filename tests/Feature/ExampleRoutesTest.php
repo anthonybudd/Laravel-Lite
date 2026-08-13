@@ -5,20 +5,20 @@ namespace Tests\Feature;
 use Illuminate\Http\Request;
 use Tests\TestCase;
 
-class FlightRoutesTest extends TestCase
+class ExampleRoutesTest extends TestCase
 {
-    public function test_get_root_returns_flights(): void
+    public function test_get_root_returns_models(): void
     {
         $response = $this->dispatch(Request::create('/', 'GET'));
 
         $this->assertSame(200, $response->getStatusCode());
 
-        $flights = json_decode($response->getContent(), true);
+        $models = json_decode($response->getContent(), true);
 
-        $this->assertCount(3, $flights);
-        $this->assertSame('AA1738', $flights[0]['name']);
-        $this->assertSame('BA1017', $flights[1]['name']);
-        $this->assertSame('UA420', $flights[2]['name']);
+        $this->assertCount(3, $models);
+        $this->assertSame('AA1738', $models[0]['name']);
+        $this->assertSame('BA1017', $models[1]['name']);
+        $this->assertSame('UA420', $models[2]['name']);
     }
 
     public function test_post_root_requires_name(): void

@@ -5,7 +5,7 @@ use Illuminate\Routing\Contracts\CallableDispatcher as CallableDispatcherContrac
 use Illuminate\Validation\Factory as ValidationFactory;
 use Illuminate\Routing\ControllerDispatcher;
 use Illuminate\Routing\CallableDispatcher;
-use Illuminate\Support\Facades\Validator;
+use Illuminate\Support\Facades\Facade;
 use Illuminate\Translation\ArrayLoader;
 use Illuminate\Translation\Translator;
 use Illuminate\Container\Container;
@@ -23,15 +23,7 @@ function bootstrap(?Request $request = null): array
     $container->singleton('translator', fn () => new Translator(new ArrayLoader, 'en'));
     $container->singleton('validator', fn ($app) => new ValidationFactory($app['translator'], $app));
 
-    if (! class_exists('Validator', false)) {
-        class_alias(\Illuminate\Support\Facades\Validator::class, 'Validator');
-    }
-
-    if (! class_exists('Facade', false)) {
-        class_alias(\Illuminate\Support\Facades\Facade::class, 'Facade');
-    }
-
-    \Facade::setFacadeApplication($container);
+    Facade::setFacadeApplication($container);
 
     $router = new Router(new Dispatcher($container), $container);
 

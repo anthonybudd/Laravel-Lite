@@ -4,7 +4,8 @@
         "illuminate/routing": "^13.0",
         "illuminate/database": "^13.0",
         "illuminate/translation": "^13.25",
-        "illuminate/validation": "^13.25"
+        "illuminate/validation": "^13.25",
+        "illuminate/http": "^13.25"
     },
     "require-dev": {
         "phpunit/phpunit": "^11.5"
