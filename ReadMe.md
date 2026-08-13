@@ -1,14 +1,14 @@
 # Laravel Lite
 
 <p align="center">
-    <img height="400" src="https://raw.githubusercontent.com/anthonybudd/anthonybudd/refs/heads/main/img/laravel-micro-thumbnail.png"/>
+    <img height="100" src="https://raw.githubusercontent.com/anthonybudd/Laravel-Lite/7917ae3c42ea009c972a9eac82b2d76a1c2b3677/public/logo.svg"/>
 </p>
 
-A super minimal Laravel PHP microservice template for prototyping PHP projects.
+A super minimal microservice template using Illuminate components for rapid prototyping of Laravel projects.
 
 - 🐘 Built Using Laravel Illuminate Components
-- 🚀 Super Minimal. Crazy-fast Cold Starts
-- ✅ Tests using PHPUnit
+- 🚀 Super Minimal. Crazy-Fast Cold Starts
+- ✅ Tests Using PHPUnit
 
 ```php
 <?php
