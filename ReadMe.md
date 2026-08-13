@@ -1,6 +1,6 @@
 # Laravel Lite
 
-<img height="75" src="https://raw.githubusercontent.com/anthonybudd/anthonybudd/refs/heads/main/img/laravel-micro-thumbnail.png"/>
+<img src="https://raw.githubusercontent.com/anthonybudd/anthonybudd/refs/heads/main/img/laravel-micro-thumbnail.png"/>
 
 A super minimal Laravel PHP microservice template for prototyping PHP projects.
 
