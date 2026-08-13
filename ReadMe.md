@@ -1,6 +1,6 @@
 # Laravel Lite
 
-<img height="150" src="https://raw.githubusercontent.com/anthonybudd/Laravel-Lite/7917ae3c42ea009c972a9eac82b2d76a1c2b3677/public/logo.svg"/>
+<img height="200" src="https://raw.githubusercontent.com/anthonybudd/Laravel-Lite/7917ae3c42ea009c972a9eac82b2d76a1c2b3677/public/logo.svg"/>
 
 A super minimal microservice template using Illuminate components for rapid prototyping of Laravel projects.
 
