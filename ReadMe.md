@@ -1,6 +1,6 @@
 # Laravel Lite
 
-<img width="350" src="https://raw.githubusercontent.com/anthonybudd/Laravel-Lite/refs/heads/master/public/logo.svg?v=1"/>
+<img width="350" src="https://raw.githubusercontent.com/anthonybudd/Laravel-Lite/refs/heads/master/public/logo.svg?v=2"/>
 
 A super minimal microservice template using Illuminate components for rapid prototyping of Laravel projects.
 
@@ -10,10 +10,10 @@ A super minimal microservice template using Illuminate components for rapid prot
 
 ```php
 <?php
-use Illuminate\Http\Response;
+use Illuminate\Http\JsonResponse;
 
 $router->get('/', function () {
-    return new Response("Hello World", 200); 
+    return new JsonResponse([1, 2, 3, 4]); 
 });
 ```
 
@@ -40,7 +40,6 @@ docker compose run --rm api composer test
 
 open http://localhost
 ```
-
 
 
 ## Project Structure
