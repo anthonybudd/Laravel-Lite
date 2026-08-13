@@ -17,6 +17,16 @@ $router->get('/', function () {
 });
 ```
 
+<p align="center">
+  <a href="https://youtu.be/Ue6Nr_FEFWI">
+  <img width="350" src="https://raw.githubusercontent.com/anthonybudd/anthonybudd/refs/heads/main/img/laravel-lite.png" alt="YouTube Video">
+  </a>
+  </br>
+  <a href="https://youtu.be/Ue6Nr_FEFWI">
+  Getting Started: youtu.be/Ue6Nr_FEFWI
+  </a>
+</p>
+
 ## Getting Started
 
 ```sh
